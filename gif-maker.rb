@@ -5,20 +5,20 @@
 class GifMaker < Formula
   desc ""
   homepage "https://github.com/theIYD/go-gif-maker"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/theIYD/go-gif-maker/releases/download/v0.1.1/gif-maker_Darwin_arm64.tar.gz"
-      sha256 "f77592b00ba2c7c3b1c71c890f3adbe698d6c40f7607e2a2e881bf81f60d6984"
+      url "https://github.com/theIYD/go-gif-maker/releases/download/v0.1.2/gif-maker_Darwin_arm64.tar.gz"
+      sha256 "2f4768823ac56705fddb4a5852460b6d8d4ce9f380ab0ba568c69bce7f135d77"
 
       def install
         bin.install "gif-maker"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/theIYD/go-gif-maker/releases/download/v0.1.1/gif-maker_Darwin_x86_64.tar.gz"
-      sha256 "f5153640d03caba4a41db2edfd2250aad265410beda46f7bb129754faecf952e"
+      url "https://github.com/theIYD/go-gif-maker/releases/download/v0.1.2/gif-maker_Darwin_x86_64.tar.gz"
+      sha256 "b2312c88d2ee2d74a2b3649dbfda41888f7a2a53e8a991937596e5719dd7b44b"
 
       def install
         bin.install "gif-maker"
@@ -28,16 +28,16 @@ class GifMaker < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/theIYD/go-gif-maker/releases/download/v0.1.1/gif-maker_Linux_arm64.tar.gz"
-      sha256 "690d8ab4189e4aac5857a6af3723e4b6cfb2d410abfe439b539fcb1eb6475ac5"
+      url "https://github.com/theIYD/go-gif-maker/releases/download/v0.1.2/gif-maker_Linux_arm64.tar.gz"
+      sha256 "2cd54698ec333e3eb244d431b209c58f97c509dbe2313daeaa80738c9f18f5d4"
 
       def install
         bin.install "gif-maker"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/theIYD/go-gif-maker/releases/download/v0.1.1/gif-maker_Linux_x86_64.tar.gz"
-      sha256 "16d7bfd9c99b47483410f7bbc6a1f9595f627bc7b5276eb1424acbc50d8ffefe"
+      url "https://github.com/theIYD/go-gif-maker/releases/download/v0.1.2/gif-maker_Linux_x86_64.tar.gz"
+      sha256 "96a795b94c361d399f7cfb6f2277b65c8e37745389858dfd3d74eb301be4a425"
 
       def install
         bin.install "gif-maker"
